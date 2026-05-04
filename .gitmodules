@@ -1,0 +1,3 @@
+[submodule "CrimsonDesertMods"]
+	path = CrimsonDesertMods
+	url = git@github.com:allquiet-hub/CrimsonDesertMods.git
