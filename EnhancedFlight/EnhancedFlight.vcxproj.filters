@@ -23,7 +23,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="EnhancedFlight.cpp">
+    <ClCompile Include="..\CrimsonDesertMods\src\EnhancedFlight\EnhancedFlight.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

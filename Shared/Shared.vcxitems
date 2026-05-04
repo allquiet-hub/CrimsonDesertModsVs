@@ -14,8 +14,8 @@
     <ProjectCapability Include="SourceItemsFromImports" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\CrimsonDesertMods\src\shared\shared_player_base.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)safetyhook.hpp" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)shared_player_base.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Zydis.h" />
   </ItemGroup>
   <ItemGroup>
