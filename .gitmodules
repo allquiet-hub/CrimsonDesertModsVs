@@ -1,3 +1,6 @@
 [submodule "CrimsonDesertMods"]
 	path = CrimsonDesertMods
 	url = git@github.com:allquiet-hub/CrimsonDesertMods.git
+[submodule "CrimsonDesert-player-status-modifier"]
+	path = CrimsonDesert-player-status-modifier
+	url = git@github.com:allquiet-hub/CrimsonDesert-player-status-modifier.git

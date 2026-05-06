@@ -23,7 +23,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\CrimsonDesertMods\src\EnhancedForcePalm\EnhancedForcePalm.cpp">
+    <ClCompile Include="..\CrimsonDesertMods\src\SuperAxiomForce\SuperAxiomForce.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

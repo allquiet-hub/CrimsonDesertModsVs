@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\hooks">
+      <UniqueIdentifier>{7a4c0b6e-2f96-4b24-8d35-b136986b1853}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\runtime">
+      <UniqueIdentifier>{97c6a448-4229-4d38-9880-8b419734ae94}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\config_watcher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\hooks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\key_listener.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\logger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\mod_logic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\position_control.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\ptrchain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\ptrchain_resources.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\scanner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\hooks\affinity_hooks.cpp">
+      <Filter>Source Files\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\hooks\dragon_limit_hooks.cpp">
+      <Filter>Source Files\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\hooks\durability_hooks.cpp">
+      <Filter>Source Files\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\hooks\economy_hooks.cpp">
+      <Filter>Source Files\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\hooks\install_hooks.cpp">
+      <Filter>Source Files\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\hooks\player_hooks.cpp">
+      <Filter>Source Files\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\runtime\actor_resolve.cpp">
+      <Filter>Source Files\runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\runtime\affinity_logic.cpp">
+      <Filter>Source Files\runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\runtime\damage_logic.cpp">
+      <Filter>Source Files\runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\runtime\durability_logic.cpp">
+      <Filter>Source Files\runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\runtime\mount_resolver.cpp">
+      <Filter>Source Files\runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\runtime\runtime_state.cpp">
+      <Filter>Source Files\runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\runtime\stat_logic.cpp">
+      <Filter>Source Files\runtime</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\CrimsonDesert-player-status-modifier\src\config.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CrimsonDesert-player-status-modifier\src\config_watcher.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CrimsonDesert-player-status-modifier\src\hooks.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CrimsonDesert-player-status-modifier\src\key_listener.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CrimsonDesert-player-status-modifier\src\logger.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CrimsonDesert-player-status-modifier\src\mod_logic.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CrimsonDesert-player-status-modifier\src\position_control.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CrimsonDesert-player-status-modifier\src\ptrchain.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CrimsonDesert-player-status-modifier\src\ptrchain_resources.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CrimsonDesert-player-status-modifier\src\scanner.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CrimsonDesert-player-status-modifier\src\hooks\hooks_internal.h">
+      <Filter>Source Files\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CrimsonDesert-player-status-modifier\src\runtime\actor_resolve.h">
+      <Filter>Source Files\runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CrimsonDesert-player-status-modifier\src\runtime\affinity_logic.h">
+      <Filter>Source Files\runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CrimsonDesert-player-status-modifier\src\runtime\damage_logic.h">
+      <Filter>Source Files\runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CrimsonDesert-player-status-modifier\src\runtime\durability_logic.h">
+      <Filter>Source Files\runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CrimsonDesert-player-status-modifier\src\runtime\mount_resolver.h">
+      <Filter>Source Files\runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CrimsonDesert-player-status-modifier\src\runtime\runtime_state.h">
+      <Filter>Source Files\runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CrimsonDesert-player-status-modifier\src\runtime\stat_logic.h">
+      <Filter>Source Files\runtime</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

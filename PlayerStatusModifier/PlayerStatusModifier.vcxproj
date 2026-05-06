@@ -18,11 +18,60 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\config.cpp" />
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\config_watcher.cpp" />
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\dllmain.cpp" />
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\hooks.cpp" />
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\hooks\affinity_hooks.cpp" />
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\hooks\dragon_limit_hooks.cpp" />
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\hooks\durability_hooks.cpp" />
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\hooks\economy_hooks.cpp" />
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\hooks\install_hooks.cpp" />
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\hooks\player_hooks.cpp" />
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\key_listener.cpp" />
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\logger.cpp" />
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\mod_logic.cpp">
+      <LanguageStandard Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">stdcpp23</LanguageStandard>
+      <LanguageStandard Condition="'$(Configuration)|$(Platform)'=='Release|x64'">stdcpp23</LanguageStandard>
+    </ClCompile>
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\position_control.cpp" />
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\ptrchain.cpp" />
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\ptrchain_resources.cpp" />
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\runtime\actor_resolve.cpp" />
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\runtime\affinity_logic.cpp" />
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\runtime\damage_logic.cpp" />
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\runtime\durability_logic.cpp" />
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\runtime\mount_resolver.cpp" />
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\runtime\runtime_state.cpp" />
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\runtime\stat_logic.cpp" />
+    <ClCompile Include="..\CrimsonDesert-player-status-modifier\src\scanner.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\CrimsonDesert-player-status-modifier\src\config.h" />
+    <ClInclude Include="..\CrimsonDesert-player-status-modifier\src\config_watcher.h" />
+    <ClInclude Include="..\CrimsonDesert-player-status-modifier\src\hooks.h" />
+    <ClInclude Include="..\CrimsonDesert-player-status-modifier\src\hooks\hooks_internal.h" />
+    <ClInclude Include="..\CrimsonDesert-player-status-modifier\src\key_listener.h" />
+    <ClInclude Include="..\CrimsonDesert-player-status-modifier\src\logger.h" />
+    <ClInclude Include="..\CrimsonDesert-player-status-modifier\src\mod_logic.h" />
+    <ClInclude Include="..\CrimsonDesert-player-status-modifier\src\position_control.h" />
+    <ClInclude Include="..\CrimsonDesert-player-status-modifier\src\ptrchain.h" />
+    <ClInclude Include="..\CrimsonDesert-player-status-modifier\src\ptrchain_resources.h" />
+    <ClInclude Include="..\CrimsonDesert-player-status-modifier\src\runtime\actor_resolve.h" />
+    <ClInclude Include="..\CrimsonDesert-player-status-modifier\src\runtime\affinity_logic.h" />
+    <ClInclude Include="..\CrimsonDesert-player-status-modifier\src\runtime\damage_logic.h" />
+    <ClInclude Include="..\CrimsonDesert-player-status-modifier\src\runtime\durability_logic.h" />
+    <ClInclude Include="..\CrimsonDesert-player-status-modifier\src\runtime\mount_resolver.h" />
+    <ClInclude Include="..\CrimsonDesert-player-status-modifier\src\runtime\runtime_state.h" />
+    <ClInclude Include="..\CrimsonDesert-player-status-modifier\src\runtime\stat_logic.h" />
+    <ClInclude Include="..\CrimsonDesert-player-status-modifier\src\scanner.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{6c9aaa95-a9f3-4c7a-83ba-da846c08e2c3}</ProjectGuid>
-    <RootNamespace>EnhancedForcePalm</RootNamespace>
+    <ProjectGuid>{abb35321-6edc-4ab8-949b-d958396ba216}</ProjectGuid>
+    <RootNamespace>PlayerStatusModifier</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -72,27 +121,22 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <TargetExt>.asi</TargetExt>
-    <OutDir>H:\SteamLibrary\steamapps\common\Crimson Desert\bin64\</OutDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <TargetExt>.asi</TargetExt>
+    <OutDir>H:\SteamLibrary\steamapps\common\Crimson Desert\bin64</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;ENHANCEDFORCEPALM_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions);WIN32;_DEBUG;ENHANCEDFLIGHT_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions);ZYDIS_STATIC_BUILD;NOMINMAX</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;PLAYERSTATUSMODIFIER_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp23</LanguageStandard>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
-      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -101,9 +145,9 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;NDEBUG;ENHANCEDFORCEPALM_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;PLAYERSTATUSMODIFIER_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp23</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
@@ -111,25 +155,23 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
-      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;ENHANCEDFORCEPALM_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;PLAYERSTATUSMODIFIER_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions);NOMINMAX</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp23</LanguageStandard>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory);$(ProjectDir)..\CrimsonDesertMods\src\shared</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory);$(ProjectDir)..\CrimsonDesert-player-status-modifier\src\</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
-      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -138,30 +180,19 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;ENHANCEDFORCEPALM_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;PLAYERSTATUSMODIFIER_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp23</LanguageStandard>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory);$(ProjectDir)..\CrimsonDesertMods\src\shared</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory);$(ProjectDir)..\CrimsonDesert-player-status-modifier\src\</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
-      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="framework.h" />
-    <ClInclude Include="pch.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\CrimsonDesertMods\src\EnhancedForcePalm\EnhancedForcePalm.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
-    </ClCompile>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
